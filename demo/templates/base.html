@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh-CN"   >
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" />
+        <meta name="format-detection" content="telephone=no" />
+        <link href="/static/style/css.css" media="screen" rel="stylesheet" type="text/css" />
+        <title>{% block title %}{% endblock %}</title>
+    </head>
+    <body align="center"> 
+        {% if show_coupon %}
+            {% for coupon in all_coupons %}
+            <p><label>title:</label>{{ coupon.cTitle }}</p>
+            {% endfor %}
+        {% else %}
+        {% block content %}{% endblock  %}
+        {% endif %}
+    <body>
+</html>  
