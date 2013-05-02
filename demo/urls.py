@@ -11,6 +11,7 @@ urlpatterns = patterns('',
     # url(r'^coupon/add$', 'demo.apps.blog.views.add_coupon', name='add_coupon'),
     # url(r'^demo/', include('demo.foo.urls')),
     url(r'^index.html', 'index'),
+    url(r'^about', 'about_me'),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
