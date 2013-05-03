@@ -1,0 +1,13 @@
+<uwsgi>
+    <socket>0.0.0.0:9099</socket>
+    <processes>1</processes>
+    <module>wsgi_blog</module>
+    <pythonpath>/data/www/py/blog</pythonpath>
+    <pidfile>/tmp/uwsgi_blog.pid</pidfile>
+    <enable-threads>true</enable-threads>
+    <master>true</master>
+    <logdate>true</logdate>
+    <cgi-mode>true</cgi-mode>
+    <memory-report>true</memory-report>
+    <!--<daemonize>/var/log/uwsgi/blog.log</daemonize>-->
+</uwsgi>
