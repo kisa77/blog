@@ -65,7 +65,8 @@ STATIC_URL = '/static/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
-        '/Users/Nemok/Documents/test/demo/demo/static',
+        '/Users/Nemok/Documents/test/blog/blog/static',
+    '/data/www/py/blog/blog/templates',
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
@@ -100,16 +101,17 @@ MIDDLEWARE_CLASSES = (
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'demo.urls'
+ROOT_URLCONF = 'blog.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'demo.wsgi.application'
+WSGI_APPLICATION = 'blog.wsgi.application'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    '/Users/Nemok/Documents/test/demo/demo/templates',
+    '/Users/Nemok/Documents/test/blog/blog/templates',
+    '/data/www/py/blog/blog/templates',
 )
 
 INSTALLED_APPS = (
@@ -122,7 +124,7 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable the admin:
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
-    'demo.apps.blog',
+    'blog.apps.blog',
     'django.contrib.admin',
     'django.contrib.sessions',
     'django.contrib.auth',
