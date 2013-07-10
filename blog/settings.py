@@ -125,6 +125,7 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
     'blog.apps.blog',
+    'blog.apps.blog.d_posts',
     'django.contrib.admin',
     'django.contrib.sessions',
     'django.contrib.auth',
