@@ -6,7 +6,7 @@ import random
 from models import coupon
 from django.template import Context
 from django.http import HttpResponse
-from django.shortcuts import render_to_response
+from django.shortcuts import render_to_response, get_object_or_404
 
 sys.path.append('/Users/Nemok/Documents/test')
 
@@ -30,3 +30,9 @@ def add_coupon(self):
              'show_coupon' : True,
              'all_coupons': all_coupons,
                 })
+def post(request, post_id):
+    #postId = get_object_or_404(post_id, name=post_id)
+
+    return render_to_response('post/post.html', {
+        'post_id' : post_id
+        })
